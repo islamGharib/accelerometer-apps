@@ -13,6 +13,7 @@
 		7F2948BC243CD39900474720 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F2948BB243CD39900474720 /* Assets.xcassets */; };
 		7F2948BF243CD39900474720 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F2948BD243CD39900474720 /* LaunchScreen.storyboard */; };
 		7F441A2B243FC2C4003EEEE9 /* ParallaxCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F441A2A243FC2C4003EEEE9 /* ParallaxCell.swift */; };
+		7F441A2E243FC739003EEEE9 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F441A2D243FC739003EEEE9 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7F2948BE243CD39900474720 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F2948C0243CD39900474720 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F441A2A243FC2C4003EEEE9 /* ParallaxCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxCell.swift; sourceTree = "<group>"; };
+		7F441A2D243FC739003EEEE9 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		7F2948B3243CD39700474720 /* accelerometeron */ = {
 			isa = PBXGroup;
 			children = (
+				7F441A2C243FC719003EEEE9 /* Services */,
 				7F441A29243FC271003EEEE9 /* View */,
 				7F441A28243FC25A003EEEE9 /* Controller */,
 				7F2948B4243CD39700474720 /* AppDelegate.swift */,
@@ -81,6 +84,14 @@
 				7F441A2A243FC2C4003EEEE9 /* ParallaxCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		7F441A2C243FC719003EEEE9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7F441A2D243FC739003EEEE9 /* DataService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +168,7 @@
 				7F441A2B243FC2C4003EEEE9 /* ParallaxCell.swift in Sources */,
 				7F2948B7243CD39700474720 /* ListTableViewController.swift in Sources */,
 				7F2948B5243CD39700474720 /* AppDelegate.swift in Sources */,
+				7F441A2E243FC739003EEEE9 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
