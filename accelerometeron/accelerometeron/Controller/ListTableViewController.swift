@@ -22,10 +22,13 @@ class ListTableViewController: UIViewController, UITableViewDelegate, UITableVie
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // Numbers of cells
+        return imageArray.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // return a configured cell with image and name
-        
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "parallaxCell", for: indexPath) as? ParallaxCell else{return UITableViewCell()}
+        cell.configuredCell(withImage: imageArray[indexPath.row], andDescription: nameArray[indexPath.row])
+        return cell
     }
 }
 
